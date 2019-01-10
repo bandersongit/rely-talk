@@ -4,9 +4,13 @@
   "description": "My Project",
   "esy": {
     "build": "refmterr dune build --profile=release",
+    "install": [
+      "esy-installer rely-talk.install",
+      "esy-installer rely-talk-tests.install"
+    ]
   },
   "scripts": {
-    "test": "esy x TestRelyTalk.exe"
+    "test": "esy x RunTests.exe"
   },
   "dependencies": {
     "@opam/dune": "*",
