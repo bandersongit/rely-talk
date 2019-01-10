@@ -1,0 +1,23 @@
+(library
+  (name Tests)
+  (public_name rely-talk-tests.lib)
+  ; IMPORTANT: -linkall flag is required to include all tests.
+  (ocamlopt_flags -linkall -g)
+  (libraries
+    rely.lib
+    rely-talk.lib
+  )
+  (modules (:standard \ RunTests))
+)
+(executable
+    (name RunTests)
+    (public_name RunTests.exe)
+    (package rely-talk-tests)
+    (libraries
+        rely-talk-tests.lib
+    )
+    (modules RunTests)
+)
+(include_subdirs unqualified)
+(dirs :standard __tests__)
+
