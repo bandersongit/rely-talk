@@ -1,0 +1,5 @@
+
+(library
+   (name RelyTalk)
+   (public_name rely-talk.lib)
+)

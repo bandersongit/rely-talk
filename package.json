@@ -1,0 +1,22 @@
+{
+  "name": "rely-talk",
+  "version": "0.0.0",
+  "description": "My Project",
+  "esy": {
+    "build": "refmterr dune build --profile=release",
+  },
+  "scripts": {
+    "test": "esy x TestRelyTalk.exe"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@esy-ocaml/reason": "*",
+    "refmterr": "*",
+    "ocaml": "~4.6.0",
+    "pesy": "*",
+    "@reason-native/rely": "^1.0.0"
+  },
+  "devDependencies": {
+    "@esy-ocaml/merlin": "*"
+  }
+}
