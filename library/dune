@@ -1,5 +1,6 @@
 
 (library
    (name RelyTalk)
+   (preprocess (pps bisect_ppx))
    (public_name rely-talk.lib)
 )

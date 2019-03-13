@@ -10,14 +10,15 @@
     ]
   },
   "scripts": {
-    "test": "esy x RunTests.exe"
+    "test": "esy x RunTests.exe",
+    "coverage": "esy bisect-ppx-report -I '#{self.target_dir}/default/' -html coverage/ bisect0001.out -verbose"
   },
   "dependencies": {
     "@opam/dune": "*",
+    "@opam/bisect_ppx": "*",
     "@esy-ocaml/reason": "*",
     "refmterr": "*",
     "ocaml": "~4.6.0",
-    "pesy": "*",
     "@reason-native/rely": "^1.2.0"
   },
   "devDependencies": {
