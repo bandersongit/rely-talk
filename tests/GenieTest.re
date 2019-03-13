@@ -17,8 +17,7 @@ describe("Genie", ({test}) => {
   test("should be able to wish for a pony", ({expect}) => {
     let genie = rubLamp() |> wish("a pony");
 
-    expect.int(genie |> getNumRemainingWishes).toBe(3);
-
+    expect.int(genie |> getNumRemainingWishes).toBe(2);
     expect.string(genie |> getLastGrantedWish).toEqual("a pony");
   });
 });

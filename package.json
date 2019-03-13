@@ -18,7 +18,7 @@
     "refmterr": "*",
     "ocaml": "~4.6.0",
     "pesy": "*",
-    "@reason-native/rely": "^1.0.0"
+    "@reason-native/rely": "^1.2.0"
   },
   "devDependencies": {
     "@esy-ocaml/merlin": "*"
