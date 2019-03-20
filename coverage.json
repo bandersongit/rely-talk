@@ -1,0 +1,10 @@
+{
+
+    "source_files": [
+        {
+            "name": "library/Genie.re",
+            "source_digest": "2556972887cac44cf0b99e48497123dd",
+            "coverage": [null,null,null,null,null,1,null,null,null,null,1,null,1,null,0,1,1,null,null,null,null,null,null,1,null,1]
+        }
+    ]
+}

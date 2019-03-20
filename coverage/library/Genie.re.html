@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <title>Coverage report</title>
+    <link rel="stylesheet" href="../coverage.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="header">
+      <h1>
+        <a href="../index.html">
+          <span class="dirname">library/</span>Genie.re
+        </a>
+      </h1>
+      <h2>93.33%</h2>
+    </div>
+    <div id="navbar">
+      <span class="some-visited" style="top:57.69%"></span>
+    </div>
+    <div id="report">
+      <div id="lines-layer">
+        <pre>
+<a id="L1"></a><span > </span>
+<a id="L2"></a><span > </span>
+<a id="L3"></a><span > </span>
+<a id="L4"></a><span > </span>
+<a id="L5"></a><span > </span>
+<a id="L6"></a><span class="visited"> </span>
+<a id="L7"></a><span > </span>
+<a id="L8"></a><span > </span>
+<a id="L9"></a><span > </span>
+<a id="L10"></a><span > </span>
+<a id="L11"></a><span class="visited"> </span>
+<a id="L12"></a><span > </span>
+<a id="L13"></a><span class="visited"> </span>
+<a id="L14"></a><span > </span>
+<a id="L15"></a><span class="some-visited"> </span>
+<a id="L16"></a><span class="visited"> </span>
+<a id="L17"></a><span class="visited"> </span>
+<a id="L18"></a><span > </span>
+<a id="L19"></a><span > </span>
+<a id="L20"></a><span > </span>
+<a id="L21"></a><span > </span>
+<a id="L22"></a><span > </span>
+<a id="L23"></a><span > </span>
+<a id="L24"></a><span class="visited"> </span>
+<a id="L25"></a><span > </span>
+<a id="L26"></a><span class="visited"> </span>
+</pre>
+      </div>
+      <div id="text-layer">
+        <pre id="line-numbers">
+<a href="#L1"> 1</a>
+<a href="#L2"> 2</a>
+<a href="#L3"> 3</a>
+<a href="#L4"> 4</a>
+<a href="#L5"> 5</a>
+<a href="#L6"> 6</a>
+<a href="#L7"> 7</a>
+<a href="#L8"> 8</a>
+<a href="#L9"> 9</a>
+<a href="#L10">10</a>
+<a href="#L11">11</a>
+<a href="#L12">12</a>
+<a href="#L13">13</a>
+<a href="#L14">14</a>
+<a href="#L15">15</a>
+<a href="#L16">16</a>
+<a href="#L17">17</a>
+<a href="#L18">18</a>
+<a href="#L19">19</a>
+<a href="#L20">20</a>
+<a href="#L21">21</a>
+<a href="#L22">22</a>
+<a href="#L23">23</a>
+<a href="#L24">24</a>
+<a href="#L25">25</a>
+<a href="#L26">26</a>
+</pre>
+        <pre id="code">
+type t = {
+    remainingWishes: int,
+    lastGrantedWish: string,
+  }
+
+  let rubLamp = <span data-count="1">(</span>) =&gt; <span data-count="3">{</span>
+    remainingWishes: 3,
+    lastGrantedWish: ""
+  };
+
+  let grantWish = <span data-count="1">w</span>ish =&gt; <span data-count="1">w</span>ish;
+
+  let wish = <span data-count="1">(</span>wish, <span data-count="2">g</span>enie) =&gt; <span data-count="2">{</span>
+    switch(wish, genie) {
+      <span data-count="0">|</span> (_, g) when <span data-count="2">g</span>.remainingWishes &lt; 1 =&gt; g
+      <span data-count="1">|</span> ("more wishes!", g) =&gt; g
+      <span data-count="1">|</span> (w, g) =&gt; {
+        remainingWishes: g.remainingWishes - 1,
+        lastGrantedWish: grantWish(w)
+      }
+    };
+  }
+
+  let getNumRemainingWishes = <span data-count="1">g</span> =&gt; <span data-count="3">g</span>.remainingWishes;
+
+  let getLastGrantedWish = <span data-count="1">g</span> =&gt; <span data-count="1">g</span>.lastGrantedWish;
+</pre>
+      </div>
+    </div>
+    <div id="footer">Generated on 2019-03-19 17:04:16 by <a href="https://github.com/aantron/bisect_ppx">Bisect_ppx</a> 1.4.0</div>
+    <script src="../coverage.js"></script>
+  </body>
+</html>

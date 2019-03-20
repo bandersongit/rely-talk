@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "esy x RunTests.exe",
-    "coverage": "esy bisect-ppx-report -I '#{self.target_dir}/default/' -html coverage/ bisect0001.out -verbose"
+    "coverage": "esy bisect-ppx-report -I '#{self.target_dir}/default/' -html coverage/ bisect0001.out -coveralls coverage.json -ignore-missing-files -verbose"
   },
   "dependencies": {
     "@opam/dune": "*",
@@ -23,5 +23,8 @@
   },
   "devDependencies": {
     "@esy-ocaml/merlin": "*"
+  },
+  "resolutions": {
+    "@opam/ocaml-migrate-parsetree": "ocaml-ppx/ocaml-migrate-parsetree:ocaml-migrate-parsetree.opam#a5be5e1b94f02c667ab354c2e6b55baedeb30187"
   }
 }
